@@ -5,8 +5,9 @@
   "main": "src/loader.js",
   "scripts": {
     "dev": "nodemon",
-    "start": "nodemon",
-    "production": "pm2 start src/loader.js --name todo-app"
+    "start": "src/loader.js",
+    "production": "pm2 start src/loader.js --name todo-app",
+    "postinstall": "npm run production"
   },
   "repository": {
     "type": "git",
